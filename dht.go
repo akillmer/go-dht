@@ -269,7 +269,7 @@ func ReadDHTxxWithContextAndRetry(parent context.Context, sensorType SensorType,
 	done := make(chan struct{})
 	defer close(done)
 	// Create context with cancelation possibility.
-	ctx, cancel := context.WithCancel(parent)
+	ctx, _ := context.WithCancel(parent)
 	retried = 0
 	for {
 		temp, hum, err := ReadDHTxx(sensorType, pin, boostPerfFlag)

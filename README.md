@@ -1,6 +1,10 @@
 DHTxx temperature and humidity sensors
 ======================================
 
+### About this fork
+This fork simply removes all of the logging and shell control from the package. Compared to other Go packages for handling DHT sensors this one is superior, I just find it annoying to use with my own projects. The original README follows.
+
+
 [![Build Status](https://travis-ci.org/d2r2/go-dht.svg?branch=master)](https://travis-ci.org/d2r2/go-dht)
 [![Go Report Card](https://goreportcard.com/badge/github.com/d2r2/go-dht)](https://goreportcard.com/report/github.com/d2r2/go-dht)
 [![GoDoc](https://godoc.org/github.com/d2r2/go-dht?status.svg)](https://godoc.org/github.com/d2r2/go-dht)
